@@ -7,6 +7,7 @@
   --contrast: #E84188;
   --elements: #C4C4C4;
   --light: #FFF;
+  --skills: #e1e1e1;
 }
 
 @font-face {
@@ -619,6 +620,11 @@ h1 {
   margin-bottom: 15rem;
 }
 
+.hero h2 {
+  font-size: 19rem;
+  color: var(--gamma);
+}
+
 @media (min-width: 767px) {
   .hero__wrap {
     max-width: 895rem;
@@ -832,6 +838,56 @@ body {
   color: var(--gamma);
 }
 
+.listing__more h1 {
+  margin: 25rem 0;
+  font-size: 17rem;
+}
+
+.listing__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.listing__skills li {
+  background-color: var(--skills);
+  padding: 7rem 9rem;
+  font-size: 14rem;
+  border-radius: 16rem;
+  margin-right: 10rem;
+  margin-bottom: 10rem;
+}
+
+.listing__saved_summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15rem;
+}
+
+.listing__saved_summary li:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.listing__saved_summary li:first-of-type span {
+  margin-right: 10rem;
+}
+
+.listing__saved_summary li:last-of-type {
+  background-color: var(--elements);
+  color: var(--light);
+  padding: 2rem 3rem;
+  border-radius: 4rem;
+  font-size: 15rem;
+}
+
 .listing__card {
   border: 1px var(--beta) solid;
   background-color: var(--light);
@@ -840,6 +896,13 @@ body {
   -webkit-box-shadow: 1px 2px 3px 1px var(--elements);
           box-shadow: 1px 2px 3px 1px var(--elements);
   margin-bottom: 20rem;
+}
+
+.listing__card--apply {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .listing__header {
@@ -896,7 +959,7 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 10rem;
-  margin-top: 15rem;
+  margin: 15rem 0;
   font-size: 14rem;
 }
 
@@ -916,7 +979,6 @@ body {
 }
 
 .listing__detail {
-  margin-top: 20rem;
   font-size: 14rem;
   line-height: 20rem;
 }
